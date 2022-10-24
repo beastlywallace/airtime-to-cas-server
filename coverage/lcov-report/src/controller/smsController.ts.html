@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20.68% </span>
+                <span class="strong">21.42% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/29</span>
+                <span class='fraction'>6/28</span>
             </div>
         
             
@@ -129,14 +129,12 @@
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -199,54 +197,53 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import express, { Request, Response, NextFunction } from 'express';
 // import  client, {accountSid, authToken} from  'twilio';
-import { Twilio } from "twilio";
+import { Twilio } from 'twilio';
 import { userInstance } from '../model/userModel';
 import { generateOtp, options } from '../utils/utils';
 import { emailTemplate } from './emailController';
 &nbsp;
-&nbsp;
-export const sendOTP = <span class="fstat-no" title="function not covered" >async </span>(req: Request|any, res: Response, next: NextFunction) =&gt; {
+export const sendOTP = <span class="fstat-no" title="function not covered" >async </span>(req: Request | any, res: Response, next: NextFunction) =&gt; {
   const { purpose } = <span class="cstat-no" title="statement not covered" >req.body;</span>
 &nbsp;
-// JOI VALIDATION
-const validationResult = <span class="cstat-no" title="statement not covered" >generateOtp.validate(req.body, options);</span>
-<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (validationResult.error) {</span>
-<span class="cstat-no" title="statement not covered" >      return res.status(400).json({</span>
-        Error: validationResult.error.details[0].message,
-      });
-    }
+  // JOI VALIDATION
+  const validationResult = <span class="cstat-no" title="statement not covered" >generateOtp.validate(req.body, options);</span>
+<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (validationResult.error) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(400).json({</span>
+      Error: validationResult.error.details[0].message,
+    });
+  }
 &nbsp;
-// TWILIO ACCOUNT DETAILS
+  // TWILIO ACCOUNT DETAILS
   const accountSid = <span class="cstat-no" title="statement not covered" >process.env.TWILIO_ACCOUNT_SID as string;</span>
   const authToken = <span class="cstat-no" title="statement not covered" >process.env.TWILIO_AUTH_TOKEN as string;</span>
-  const twilioNumber = <span class="cstat-no" title="statement not covered" >process.env.TWILIO_PHONE_NUMBER as string;<span class="cstat-no" title="statement not covered" ></span>``</span>
+  const twilioNumber = <span class="cstat-no" title="statement not covered" >process.env.TWILIO_PHONE_NUMBER as string;</span>
 &nbsp;
-// TWILIO CLIENT
+  // TWILIO CLIENT
   const client = <span class="cstat-no" title="statement not covered" >new Twilio(accountSid, authToken);</span>
 &nbsp;
-// GENERATE OTP
-const otp = <span class="cstat-no" title="statement not covered" >Math.floor(100000 + Math.random() * 900000);</span>
-const {id} = <span class="cstat-no" title="statement not covered" >req.user;</span>
-const user = <span class="cstat-no" title="statement not covered" >await userInstance.findOne({ where: { id } });</span>
-<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span>if (!user) {</span>
-<span class="cstat-no" title="statement not covered" >  return res.status(404).json({ message: "User not found" });</span>
-}
-<span class="cstat-no" title="statement not covered" >await user.update({ otp, otpExpires: Date.now() + 300000 });</span>
+  // GENERATE OTP
+  const otp = <span class="cstat-no" title="statement not covered" >Math.floor(100000 + Math.random() * 900000);</span>
+  const { id } = <span class="cstat-no" title="statement not covered" >req.user;</span>
+  const user = <span class="cstat-no" title="statement not covered" >await userInstance.findOne({ where: { id } });</span>
+<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (!user) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(404).json({ message: 'User not found' });</span>
+  }
+<span class="cstat-no" title="statement not covered" >  await user.update({ otp, otpExpires: Date.now() + 60000 });</span>
 &nbsp;
-// SEND OTP TO EMAIL
-const emailData = <span class="cstat-no" title="statement not covered" >{</span>
-  to: user.email,
-  subject: 'Airtime2Cash OTP',
-  html: `This is your OTP ${purpose}:  ${otp} it expires in 5 minutes`
-}
-<span class="cstat-no" title="statement not covered" >emailTemplate(emailData);</span>
+  // SEND OTP TO EMAIL
+  const emailData = <span class="cstat-no" title="statement not covered" >{</span>
+    to: user.email,
+    subject: 'Airtime2Cash OTP',
+    html: `This is your OTP ${purpose}:  ${otp} it expires in 1 minutes`,
+  };
+<span class="cstat-no" title="statement not covered" >  emailTemplate(emailData);</span>
 &nbsp;
-// SEND OTP TO USER PHONE NUMBER
+  // SEND OTP TO USER PHONE NUMBER
 <span class="cstat-no" title="statement not covered" >  try {</span>
     const sms = <span class="cstat-no" title="statement not covered" >await client.messages.create({</span>
-      from:twilioNumber,
-      to: "+234"+user.phoneNumber.slice(1,user.phoneNumber.length),
-      body: `This is your OTP ${purpose}:  ${otp} it expires in 5 minutes`
+      from: twilioNumber,
+      to: '+234' + user.phoneNumber.slice(1, user.phoneNumber.length),
+      body: `This is your OTP ${purpose}:  ${otp} it expires in 1 minutes`,
     });
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (sms) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(201).json({</span>
@@ -256,14 +253,14 @@ const emailData = <span class="cstat-no" title="statement not covered" >{</span>
       });
     }
   } catch (error) {
-<span class="cstat-no" title="statement not covered" >    console.log(error)</span>
+<span class="cstat-no" title="statement not covered" >    console.log(error);</span>
 <span class="cstat-no" title="statement not covered" >    return res.status(500).json({</span>
       status: 'error',
       message: 'internal server error',
-      error
+      error,
     });
   }
-}
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -271,7 +268,7 @@ const emailData = <span class="cstat-no" title="statement not covered" >{</span>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-15T00:43:22.661Z
+                at 2022-10-24T10:48:14.737Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
