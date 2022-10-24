@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1665794602838" clover="3.2.0">
-  <project timestamp="1665794602838" name="All files">
-    <metrics statements="634" coveredstatements="325" conditionals="99" coveredconditionals="19" methods="47" coveredmethods="15" elements="780" coveredelements="359" complexity="0" loc="634" ncloc="634" packages="7" files="24" classes="24"/>
+<coverage generated="1666608494936" clover="3.2.0">
+  <project timestamp="1666608494940" name="All files">
+    <metrics statements="631" coveredstatements="325" conditionals="99" coveredconditionals="19" methods="47" coveredmethods="15" elements="777" coveredelements="359" complexity="0" loc="631" ncloc="631" packages="7" files="24" classes="24"/>
     <package name="src">
       <metrics statements="37" coveredstatements="33" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
-      <file name="app.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/app.ts">
+      <file name="app.ts" path="/Users/admin/Documents/sev/src/app.ts">
         <metrics statements="37" coveredstatements="33" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -21,33 +21,33 @@
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="62" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="59" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.config">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="database.config.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/config/database.config.ts">
+      <file name="database.config.ts" path="/Users/admin/Documents/sev/src/config/database.config.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -55,8 +55,8 @@
       </file>
     </package>
     <package name="src.controller">
-      <metrics statements="432" coveredstatements="163" conditionals="84" coveredconditionals="19" methods="40" coveredmethods="12"/>
-      <file name="accounts.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/accounts.ts">
+      <metrics statements="429" coveredstatements="163" conditionals="84" coveredconditionals="19" methods="40" coveredmethods="12"/>
+      <file name="accounts.ts" path="/Users/admin/Documents/sev/src/controller/accounts.ts">
         <metrics statements="40" coveredstatements="23" conditionals="6" coveredconditionals="2" methods="4" coveredmethods="2"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -99,8 +99,8 @@
         <line num="97" count="0" type="stmt"/>
         <line num="104" count="0" type="stmt"/>
       </file>
-      <file name="credit.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/credit.ts">
-        <metrics statements="35" coveredstatements="6" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="credit.ts" path="/Users/admin/Documents/sev/src/controller/credit.ts">
+        <metrics statements="32" coveredstatements="6" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -110,34 +110,31 @@
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="17" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
         <line num="89" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="99" count="0" type="stmt"/>
-        <line num="100" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
       </file>
-      <file name="emailController.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/emailController.ts">
+      <file name="emailController.ts" path="/Users/admin/Documents/sev/src/controller/emailController.ts">
         <metrics statements="20" coveredstatements="14" conditionals="3" coveredconditionals="2" methods="7" coveredmethods="3"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -160,7 +157,7 @@
         <line num="60" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
       </file>
-      <file name="fluter.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/fluter.ts">
+      <file name="fluter.ts" path="/Users/admin/Documents/sev/src/controller/fluter.ts">
         <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -179,7 +176,7 @@
         <line num="24" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
       </file>
-      <file name="sellAirtime.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/sellAirtime.ts">
+      <file name="sellAirtime.ts" path="/Users/admin/Documents/sev/src/controller/sellAirtime.ts">
         <metrics statements="58" coveredstatements="8" conditionals="19" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -240,37 +237,37 @@
         <line num="133" count="0" type="stmt"/>
         <line num="139" count="0" type="stmt"/>
       </file>
-      <file name="smsController.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/smsController.ts">
+      <file name="smsController.ts" path="/Users/admin/Documents/sev/src/controller/smsController.ts">
         <metrics statements="27" coveredstatements="5" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="52" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="53" count="0" type="stmt"/>
+        <line num="51" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
       </file>
-      <file name="userController.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/userController.ts">
+      <file name="userController.ts" path="/Users/admin/Documents/sev/src/controller/userController.ts">
         <metrics statements="184" coveredstatements="90" conditionals="39" coveredconditionals="15" methods="19" coveredmethods="7"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -457,7 +454,7 @@
         <line num="531" count="0" type="stmt"/>
         <line num="532" count="0" type="stmt"/>
       </file>
-      <file name="withdraw.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/controller/withdraw.ts">
+      <file name="withdraw.ts" path="/Users/admin/Documents/sev/src/controller/withdraw.ts">
         <metrics statements="52" coveredstatements="9" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -515,7 +512,7 @@
     </package>
     <package name="src.middleware">
       <metrics statements="58" coveredstatements="22" conditionals="11" coveredconditionals="0" methods="3" coveredmethods="1"/>
-      <file name="adminAuth.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/middleware/adminAuth.ts">
+      <file name="adminAuth.ts" path="/Users/admin/Documents/sev/src/middleware/adminAuth.ts">
         <metrics statements="22" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -540,7 +537,7 @@
         <line num="43" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
       </file>
-      <file name="auth.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/middleware/auth.ts">
+      <file name="auth.ts" path="/Users/admin/Documents/sev/src/middleware/auth.ts">
         <metrics statements="22" coveredstatements="16" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -565,7 +562,7 @@
         <line num="42" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
       </file>
-      <file name="otpValidate.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/middleware/otpValidate.ts">
+      <file name="otpValidate.ts" path="/Users/admin/Documents/sev/src/middleware/otpValidate.ts">
         <metrics statements="14" coveredstatements="2" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -585,21 +582,21 @@
     </package>
     <package name="src.model">
       <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="accounts.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/model/accounts.ts">
+      <file name="accounts.ts" path="/Users/admin/Documents/sev/src/model/accounts.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
       </file>
-      <file name="sellAirtimeModel.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/model/sellAirtimeModel.ts">
+      <file name="sellAirtimeModel.ts" path="/Users/admin/Documents/sev/src/model/sellAirtimeModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="userModel.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/model/userModel.ts">
+      <file name="userModel.ts" path="/Users/admin/Documents/sev/src/model/userModel.ts">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -615,7 +612,7 @@
         <line num="142" count="1" type="stmt"/>
         <line num="143" count="1" type="stmt"/>
       </file>
-      <file name="withdrawalHistory.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/model/withdrawalHistory.ts">
+      <file name="withdrawalHistory.ts" path="/Users/admin/Documents/sev/src/model/withdrawalHistory.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -625,7 +622,7 @@
     </package>
     <package name="src.routes">
       <metrics statements="61" coveredstatements="61" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="accounts.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/accounts.ts">
+      <file name="accounts.ts" path="/Users/admin/Documents/sev/src/routes/accounts.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -637,7 +634,7 @@
         <line num="14" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="credit.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/credit.ts">
+      <file name="credit.ts" path="/Users/admin/Documents/sev/src/routes/credit.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -647,7 +644,7 @@
         <line num="7" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="email.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/email.ts">
+      <file name="email.ts" path="/Users/admin/Documents/sev/src/routes/email.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -655,7 +652,7 @@
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
-      <file name="transaction.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/transaction.ts">
+      <file name="transaction.ts" path="/Users/admin/Documents/sev/src/routes/transaction.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -667,7 +664,7 @@
         <line num="9" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="users.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/users.ts">
+      <file name="users.ts" path="/Users/admin/Documents/sev/src/routes/users.ts">
         <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -693,7 +690,7 @@
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
       </file>
-      <file name="withdraw.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/routes/withdraw.ts">
+      <file name="withdraw.ts" path="/Users/admin/Documents/sev/src/routes/withdraw.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -707,7 +704,7 @@
     </package>
     <package name="src.utils">
       <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="utils.ts" path="/Users/decagon/Desktop/SELF/live_servers/src/utils/utils.ts">
+      <file name="utils.ts" path="/Users/admin/Documents/sev/src/utils/utils.ts">
         <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

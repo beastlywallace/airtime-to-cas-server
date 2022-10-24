@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.14% </span>
+                <span class="strong">18.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/35</span>
+                <span class='fraction'>6/32</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.14% </span>
+                <span class="strong">18.75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/35</span>
+                <span class='fraction'>6/32</span>
             </div>
         
             
@@ -163,11 +163,7 @@
 <a name='L98'></a><a href='#L98'>98</a>
 <a name='L99'></a><a href='#L99'>99</a>
 <a name='L100'></a><a href='#L100'>100</a>
-<a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a>
-<a name='L103'></a><a href='#L103'>103</a>
-<a name='L104'></a><a href='#L104'>104</a>
-<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L101'></a><a href='#L101'>101</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -179,25 +175,23 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -209,8 +203,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -283,7 +275,7 @@ export async function <span class="fstat-no" title="function not covered" >credi
 <span class="cstat-no" title="statement not covered" >    try {</span>
             // const userID = req.user.id;
             const { email, amountToSend, status, amountReceived, transactionID} = <span class="cstat-no" title="statement not covered" >req.body;</span>
-<span class="cstat-no" title="statement not covered" >          console.log(amountReceived)</span>
+          
             // JOY VALIDATION
             const validatedInput = <span class="cstat-no" title="statement not covered" >await creditSchema.validateAsync(req.body, options);</span>
 <span class="cstat-no" title="statement not covered" >          <span class="missing-if-branch" title="if path not taken" >I</span>if (validatedInput.error) {</span>
@@ -292,7 +284,6 @@ export async function <span class="fstat-no" title="function not covered" >credi
 &nbsp;
         //  GET CUSTOMER BY EMAIL
           const customer = <span class="cstat-no" title="statement not covered" >await userInstance.findOne({where: {email}})</span>
-<span class="cstat-no" title="statement not covered" >          console.log(customer)</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >          <span class="missing-if-branch" title="if path not taken" >I</span>if(!customer){</span>
 <span class="cstat-no" title="statement not covered" >              return res.status(404).json({message:"customer not found"})</span>
@@ -301,7 +292,6 @@ export async function <span class="fstat-no" title="function not covered" >credi
 &nbsp;
         // CREDIT THE USER WALLET
           const newCustomerWalletBalance = <span class="cstat-no" title="statement not covered" >customer.walletBalance + amountToSend;</span>
-&nbsp;
 &nbsp;
           const getTransaction = <span class="cstat-no" title="statement not covered" >await SellAirtimeInstance.findOne({</span>
             where:{id:transactionID, transactionStatus:"pending"}
@@ -313,8 +303,6 @@ export async function <span class="fstat-no" title="function not covered" >credi
             })
           }
 &nbsp;
-          // console.log(amountToSend)
-<span class="cstat-no" title="statement not covered" >          console.log(transactionID)</span>
           const updateStatus = <span class="cstat-no" title="statement not covered" >await SellAirtimeInstance.update({</span>
             transactionStatus:status, amountToSell:amountReceived, amountToReceive:amountToSend},{where:{id:transactionID}
           })
@@ -382,7 +370,7 @@ export async function <span class="fstat-no" title="function not covered" >credi
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-15T00:43:22.661Z
+                at 2022-10-24T10:48:14.737Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
