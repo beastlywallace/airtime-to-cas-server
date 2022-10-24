@@ -11,7 +11,6 @@ async function credit(req, res, next) {
     try {
         // const userID = req.user.id;
         const { email, amountToSend, status, amountReceived, transactionID } = req.body;
-        console.log(amountReceived);
         // JOY VALIDATION
         const validatedInput = await utils_1.creditSchema.validateAsync(req.body, utils_1.options);
         if (validatedInput.error) {
@@ -19,7 +18,6 @@ async function credit(req, res, next) {
         }
         //  GET CUSTOMER BY EMAIL
         const customer = await userModel_1.userInstance.findOne({ where: { email } });
-        console.log(customer);
         if (!customer) {
             return res.status(404).json({ message: "customer not found" });
         }
@@ -34,8 +32,6 @@ async function credit(req, res, next) {
                 Transaction: getTransaction
             });
         }
-        // console.log(amountToSend)
-        console.log(transactionID);
         const updateStatus = await sellAirtimeModel_1.SellAirtimeInstance.update({
             transactionStatus: status, amountToSell: amountReceived, amountToReceive: amountToSend
         }, { where: { id: transactionID }
